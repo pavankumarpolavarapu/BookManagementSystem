@@ -10,7 +10,7 @@ namespace BookManagement.Models {
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         public string EmailId { get; set; }
         public DateTime RegistrationDate { get; set; }
         public DateTime? ExpirationDate { get; set; }

@@ -1,0 +1,61 @@
+@page
+@model BookManagement.Pages.Patrons.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Patron</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.EmailId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.EmailId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.RegistrationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.RegistrationDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.ExpirationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.ExpirationDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patron.Country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patron.Country)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Patron.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

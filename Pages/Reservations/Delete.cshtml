@@ -1,0 +1,52 @@
+@page
+@model BookManagement.Pages.Reservations.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.BorrowDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.BorrowDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.ReturnDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.ReturnDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.ActualReturnDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.ActualReturnDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.Patron)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.Patron.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.Book)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.Book.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Reservation.Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

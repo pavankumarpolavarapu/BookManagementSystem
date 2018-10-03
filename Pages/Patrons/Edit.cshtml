@@ -1,0 +1,65 @@
+@page
+@model BookManagement.Pages.Patrons.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Patron</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Patron.Id" />
+            <div class="form-group">
+                <label asp-for="Patron.Name" class="control-label"></label>
+                <input asp-for="Patron.Name" class="form-control" />
+                <span asp-validation-for="Patron.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.PhoneNumber" class="control-label"></label>
+                <input asp-for="Patron.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Patron.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.EmailId" class="control-label"></label>
+                <input asp-for="Patron.EmailId" class="form-control" />
+                <span asp-validation-for="Patron.EmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.RegistrationDate" class="control-label"></label>
+                <input asp-for="Patron.RegistrationDate" class="form-control" />
+                <span asp-validation-for="Patron.RegistrationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.ExpirationDate" class="control-label"></label>
+                <input asp-for="Patron.ExpirationDate" class="form-control" />
+                <span asp-validation-for="Patron.ExpirationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.Gender" class="control-label"></label>
+                <input asp-for="Patron.Gender" class="form-control" />
+                <span asp-validation-for="Patron.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patron.Country" class="control-label"></label>
+                <input asp-for="Patron.Country" class="form-control" />
+                <span asp-validation-for="Patron.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
