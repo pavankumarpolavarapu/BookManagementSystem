@@ -2,13 +2,13 @@
 @model BookManagement.Pages.Patrons.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Patron Management Console";
 }
 
-<h2>Index</h2>
+<h2>Registered Patrons</h2>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Create New Patron</a>
 </p>
 <table class="table">
     <thead>
@@ -28,6 +28,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Patron[0].ExpirationDate)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patron[0].ExpirationDays)
+            </th>            
             <th>
                 @Html.DisplayNameFor(model => model.Patron[0].Gender)
             </th>
@@ -55,6 +58,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ExpirationDate)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpirationDays)
+            </td>            
             <td>
                 @Html.DisplayFor(modelItem => item.Gender)
             </td>

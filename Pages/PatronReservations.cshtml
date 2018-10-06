@@ -1,0 +1,39 @@
+﻿@page
+@model PatronReservationsModel
+@{
+}
+
+<h3>@Model.Patron.Name Reservations </h3>
+<table class="table">
+    <thead>
+        <th>
+            Title
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Borrow Date
+        </th>
+        <th>
+            Expected Return Date
+        </th>
+    </thead>
+@foreach( var item in Model.Patron.Reservations)
+{
+<tr>
+    <td>
+        @item.Book.Title
+    </td>
+    <td>
+        @item.Book.Author
+    </td>
+    <td>
+        @item.BorrowDate
+    </td>
+    <td>
+        @item.ReturnDate
+    </td>
+</tr>
+}
+</table>

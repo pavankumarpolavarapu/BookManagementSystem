@@ -12,7 +12,7 @@ namespace BookManagement.Pages
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "Reach us at";
         }
     }
 }

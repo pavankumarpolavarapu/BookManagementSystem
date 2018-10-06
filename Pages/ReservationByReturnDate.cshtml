@@ -1,0 +1,41 @@
+﻿@page
+@model ReservationByReturnDateModel
+@{
+}
+
+<h3>Reservations between @Model.begin 
+    and 
+    @Model.end</h3>
+<table class="table">
+    <thead>
+        <th>
+            Expected Return Date
+        </th>        
+        <th>
+            Title
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Borrow Date
+        </th>
+    </thead>
+@foreach( var item in Model.Reservations)
+{
+<tr>
+    <td>
+        @item.ReturnDate
+    </td>
+    <td>
+        @item.Book.Title
+    </td>
+    <td>
+        @item.Book.Author
+    </td>
+    <td>
+        @item.BorrowDate
+    </td>
+</tr>
+}
+</table>

@@ -12,7 +12,7 @@ namespace BookManagement.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Leading Book Management Software Solution Provider";
         }
     }
 }

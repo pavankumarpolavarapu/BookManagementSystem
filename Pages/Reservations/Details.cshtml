@@ -5,7 +5,7 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h2>Reservation Details</h2>
 
 <div>
     <h4>Reservation</h4>
@@ -30,16 +30,22 @@
             @Html.DisplayFor(model => model.Reservation.ActualReturnDate)
         </dd>
         <dt>
+            @Html.DisplayNameFor(model => model.Reservation.DelayDays)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.DelayDays)
+        </dd>
+        <dt>
             @Html.DisplayNameFor(model => model.Reservation.Patron)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Reservation.Patron.Id)
+            @Html.DisplayFor(model => model.Reservation.Patron.Name)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Reservation.Book)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Reservation.Book.Id)
+            @Html.DisplayFor(model => model.Reservation.Book.Title)
         </dd>
     </dl>
 </div>

@@ -1,0 +1,27 @@
+﻿@page
+@model BooksByGenreModel
+@{
+}
+<h3>@Model._Genre Books </h3>
+<table class="table">
+    <thead>
+        <th>
+            Title
+        </th>
+        <th>
+            Author
+        </th>
+    </thead>
+@foreach( var item in Model.Books)
+{
+<tr>
+    <td>
+        @item.Title
+    </td>
+    <td>
+        @item.Author
+    </td>
+
+</tr>
+}
+</table>
