@@ -1,0 +1,83 @@
+﻿@page
+@model SearchBooksModel
+@{
+}
+
+<form action="" method="POST" style="margin-top: 50px;">
+  <div class="form-group">
+    <label class="control-label" for="search">Book Title</label>
+    <input type="text" class="form-control" name="search" id="search" placeholder="Web" />
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Search Book" class="btn btn-default"  />
+  </div>
+</form>
+
+
+@if(Model.SearchCompleted) {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Rating</th>
+                <th>Reserved by</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model.SearchResults.Count > 0) {
+                @foreach(var Book in Model.SearchResults) {
+                    @if( @Book.Reservations.Count == 0){
+                        <tr>
+                            <td>
+                                @Book.Title
+                            </td>
+                            <td>
+                                @Book.Genre
+                            </td>
+                            <td>
+                                @Book.Rating
+                            </td>
+                            <td> 
+                            </td>
+                            <td>
+                                <a asp-page="/Books/Details" asp-route-id="@Book.Id">More Information</a>
+                            </td>
+                        </tr>
+                    } 
+                    else {
+                        @foreach( var Reservation in Book.Reservations) {
+                            <tr>
+                                <td>@Book.Title</td>
+                                <td>
+                                    @Book.Genre
+                                </td>
+                                <td>@Book.Rating</td>
+                                <td>@if(@Reservation.ReturnDate != @DateTime.MinValue){
+                                    @Reservation.Patron.Name
+                                }
+                                </td>
+                                <td>
+                                    <a asp-page="/Books/Details" asp-route-id="@Book.Id">More Information</a>
+                                </td>
+                            </tr>
+                        }
+                    }   
+                }
+            } else {
+                <tr class="danger">
+                    <td colspan="4" class="text-center">
+                        No results found for term "@Model.Search"
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+} else {
+    <div class="alert alert-info">
+        <p>
+            Enter the search terms into the box and click <strong>Search Books</strong>
+        </p>
+    </div>
+}

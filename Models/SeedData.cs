@@ -28,6 +28,18 @@ namespace BookManagement.Models {
                                 PublishedDate = DateTime.Parse ("2015-10-10")
                         },
                         new Book {
+                            Title = "ABCs of the Web",
+                                Genre = "Illustrated",
+                                Rating = 4,
+                                Author = "John C. Vanden-Heuvel, Andrey Ostrovsky",
+                                Edition = 1,
+                                Price = 100.00M,
+                                ISBN = "9781499803129",
+                                NumberOfPages = 28,
+                                Publisher = "little bee books",
+                                PublishedDate = DateTime.Parse ("2016-03-10")
+                        },
+                        new Book {
                             Title = "XML: A Manager's Guide",
                                 Genre = "Programming",
                                 Rating = 4,
@@ -42,7 +54,7 @@ namespace BookManagement.Models {
                     );
                     context.SaveChanges ();
                 }
-                
+
                 if (context.Patron.Any ()) {
                     return; // DB has been seeded
                 } else {
