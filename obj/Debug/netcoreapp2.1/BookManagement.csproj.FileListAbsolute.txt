@@ -52,3 +52,4 @@ C:\Users\Pavan\Documents\GitHub\BookManagement\obj\Debug\netcoreapp2.1\Razor\Pag
 c:\Users\Pavan\Documents\GitHub\BookManagement\obj\Debug\netcoreapp2.1\Razor\Pages\SearchBooks.g.cshtml.cs
 C:\Users\Pavan\Documents\GitHub\BookManagement\obj\Debug\netcoreapp2.1\Razor\Pages\ReturnBook.g.cshtml.cs
 C:\Users\Pavan\Documents\GitHub\BookManagement\obj\Debug\netcoreapp2.1\Razor\Pages\BorrowBook.g.cshtml.cs
+C:\Users\Pavan\Documents\GitHub\BookManagement\obj\Debug\netcoreapp2.1\Razor\Pages\Help.g.cshtml.cs

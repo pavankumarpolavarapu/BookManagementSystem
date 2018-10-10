@@ -61,7 +61,7 @@ using BookManagement;
             WriteLiteral("\r\n<h2>Reservation List</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(168, 47, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afa289531e1b4cb8b319f733f6fabcfb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd306a04888249f7aed729efd1f90283", async() => {
                 BeginContext(189, 22, true);
                 WriteLiteral("Create New Reservation");
                 EndContext();
@@ -211,7 +211,7 @@ using BookManagement;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1726, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eee4a53d371445ce9d98666adca9454e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3edd26a9995d424caa38a572626f87c5", async() => {
                 BeginContext(1771, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -246,7 +246,7 @@ using BookManagement;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1799, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b960db2a5cf4abdb1af787ecec1a5d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82feb5e90a9e466a9067ffabb19f59fd", async() => {
                 BeginContext(1847, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -281,7 +281,7 @@ using BookManagement;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1878, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35bc388bf4844a3a981bfb0139157a8c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3493ad096935482c9b8b7a16969e9ab9", async() => {
                 BeginContext(1925, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
