@@ -21,7 +21,7 @@
                 </div>
             </div>
             
-            @if(Model.Reservation.ActualReturnDate == DateTime.MinValue) {
+            @if(Model.Reservation.ActualReturnDate == DateTime.MinValue | Model.Reservation.ActualReturnDate == null) {
                 
                 <input type="hidden" asp-for="ReturnBookForm.ReservationId" />
                 <div class="form-group">

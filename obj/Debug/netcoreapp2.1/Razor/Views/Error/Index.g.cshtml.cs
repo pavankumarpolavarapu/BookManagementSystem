@@ -78,7 +78,7 @@ switch (statusCode) {
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             EndContext();
             BeginContext(735, 918, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d73d917700f4ecb807637ed2cc3d709", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42340fb4cfc144a89a69a41742c830a5", async() => {
                 BeginContext(741, 469, true);
                 WriteLiteral(@"
 	<meta charset=""utf-8"">
@@ -95,7 +95,7 @@ switch (statusCode) {
 	");
                 EndContext();
                 BeginContext(1210, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e79bb8f1f6064ee39e71f0636bb54e56", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a0bff44273944677a899dcb444e1a5b3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -139,7 +139,7 @@ switch (statusCode) {
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(1657, 699, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11e8cdc0fda74511b36251b6c0184703", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4fa99ff6e93495784212ed9baa13ed8", async() => {
                 BeginContext(1663, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();

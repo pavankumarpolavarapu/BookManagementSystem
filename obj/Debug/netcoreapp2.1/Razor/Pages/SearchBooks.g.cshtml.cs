@@ -54,7 +54,7 @@ using BookManagement;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(41, 373, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16df9ea9f80b426ba1c4a0aa612da24c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a899095a0b0e46ce8f325ccdd778bd45", async() => {
                 BeginContext(97, 310, true);
                 WriteLiteral(@"
   <div class=""form-group"">
@@ -157,7 +157,7 @@ using BookManagement;
             WriteLiteral("\r\n                            </td>\r\n                            <td> \r\n                            </td>\r\n                            <td>\r\n                                ");
             EndContext();
             BeginContext(1406, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfccfb980707472e8190c8fac3bc535e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5bef7de1fe504d18b22a571b6b32ac88", async() => {
                 BeginContext(1459, 16, true);
                 WriteLiteral("More Information");
                 EndContext();
@@ -259,7 +259,7 @@ using BookManagement;
             WriteLiteral("                                </td>\r\n                                <td>\r\n                                    ");
             EndContext();
             BeginContext(2242, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b4f9f38d2db41369de5c37c8915ffc9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81af0d3992c148fbb5b7aa9ce45aa032", async() => {
                 BeginContext(2295, 16, true);
                 WriteLiteral("More Information");
                 EndContext();
